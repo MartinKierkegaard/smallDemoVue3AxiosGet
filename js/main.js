@@ -4,6 +4,8 @@ const app = Vue.createApp({
     data() {
         return {
             intro: 'Welcome to my Vue template',
+            carList:[],
+
         }
     },
     methods: {
@@ -17,6 +19,7 @@ const app = Vue.createApp({
             .then(
                 response => {
                     console.log(response)
+                    this.carList = response.data
                 }
             )
             .catch(
