@@ -14,6 +14,9 @@
 
       <h1>{{ intro }}</h1>
       
+      <button v-on:click="getAllCars">Get Cars</button>
+
+
     </div>
 
     <!-- Import App -->
@@ -23,5 +26,10 @@
     <script>
       const mountedApp = app.mount('#app')
     </script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+
+    
+    
+
   </body>
 </html>

@@ -8,6 +8,9 @@ const app = Vue.createApp({
         myMethod(){
 
         },
+        getAllCars(){
+            console.log("er i metoden getAllCars");
+        },
     },
     computed: {
         myComputed() {
